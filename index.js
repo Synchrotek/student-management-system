@@ -13,8 +13,10 @@ app.get('/', (req, res) => {
 // Routes use ---------------------------
 const feesRoutes = require('./routes/fees.route.js');
 const studentRoutes = require('./routes/student.route.js');
+const attendancRoutes = require('./routes/attendanceRoutes.js');
 app.use('/fees', feesRoutes);
 app.use('/student', studentRoutes);
+app.use('/', attendancRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server running on PORT: ${PORT}`)
