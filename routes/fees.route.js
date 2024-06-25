@@ -2,12 +2,10 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/fee_controller')
 
-// router.post('/', () => { });
+router.get('/feeStructure', controller.getAllFeeStructure);
 
-router.get('/feeStructure',controller.getAllFeeStructure);
+router.post('/enroll', controller.studentOptedCourse);
 
-router.post('/enroll',controller.studentOptedCourse);
-
-router.patch('/changeStatus',controller.changeStatus)
+router.patch('/changeStatus', controller.changeStatus)
 
 module.exports = router;
