@@ -1,7 +1,0 @@
-# Do not expose your Neon credentials to the browser
-
-PGHOST = 'ep-sweet-math-a1pjc4md-pooler.ap-southeast-1.aws.neon.tech'
-PGDATABASE = 'Student-management-system'
-PGUSER = 'Student-management-system_owner'
-PGPASSWORD = 'jNo9xis7DkUc'
-ENDPOINT_ID = 'ep-sweet-math-a1pjc4md-pooler'
